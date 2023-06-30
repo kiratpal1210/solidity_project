@@ -50,16 +50,16 @@ contract MyToken {
 }
 
 3. Compiling the Contract:
-  -Use the Remix compiler panel to compile your token contract.
-  -Select the appropriate compiler version i.e 0.8.18.
+   Use the Remix compiler panel to compile your token contract.
+   Select the appropriate compiler version i.e 0.8.18.
 4. Deploying the Contract:
-  -Switch to the "Deploy & run transactions" tab in Remix.
-  -Deploy the compiled contract by clicking the "Deploy" button.
+   Switch to the "Deploy & run transactions" tab in Remix.
+   Deploy the compiled contract by clicking the "Deploy" button.
 5. Interacting with the Token:
-  -Utilize the Remix IDE to interact with the deployed token contract.
-  -Use the Addresstobalance, mint and burn functions in the "Deployed Contracts" section to 
+   Utilize the Remix IDE to interact with the deployed token contract.
+   Use the Addresstobalance, mint and burn functions in the "Deployed Contracts" section to 
    perform actions like transferring tokens, checking balances, and burning tokens.
-  -Input the adress and value and click on the corresponding function buttons to execute our 
+   Input the adress and value and click on the corresponding function buttons to execute our 
    contract.
 
 ## Authors
