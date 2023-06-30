@@ -1,63 +1,42 @@
-**CREATING MY OWN TOKEN**
+# Hello World
 
-The project involves the creation of a custom token using the Solidity programming language. Tokens are a fundamental aspect of the Ethereum blockchain ecosystem, representing digital assets that can be transferred and exchanged. By developing your own token, you can explore the underlying concepts of blockchain, smart contracts, and decentralized finance.
+This Solidity program is a simple "Hello World" program that demonstrates the basic syntax and functionality of the Solidity programming language. The purpose of this program is to serve as a starting point for those who are new to Solidity and want to get a feel for how it works.
 
-**Description**
+## Description
 
-This project focuses on creating a custom token using the Solidity programming language within the Remix IDE. Remix is a popular web-based development environment that provides a user-friendly interface for writing, compiling, and deploying smart contracts on the Ethereum blockchain.
+This program is a simple contract written in Solidity, a programming language used for developing smart contracts on the Ethereum blockchain. The contract has a single function that returns the string "Hello World!". This program serves as a simple and straightforward introduction to Solidity programming, and can be used as a stepping stone for more complex projects in the future.
 
-**Getting Started**
+## Getting Started
 
-**Executing program**
+### Executing program
 
-The project will involve the following steps:
-
-**Setting up Remix:**
-
-Open the Remix IDE in your web browser.
 To run this program, you can use Remix, an online Solidity IDE. To get started, go to the Remix website at https://remix.ethereum.org/.
-Creating the Token Contract:
-Start a new file in the code editor within Remix. Copy and paste the following code into the file:
-''' // SPDX-License-Identifier: MIT pragma solidity 0.8.18;
 
-contract MyToken { // public variables here string public Tname = "MyCoin"; string public Tabbrev = "MC"; uint public Ttotal = 0;
+Once you are on the Remix website, create a new file by clicking on the "+" icon in the left-hand sidebar. Save the file with a .sol extension (e.g., HelloWorld.sol). Copy and paste the following code into the file:
 
-// mapping variable here
-mapping(address => uint) public Adresstobalance;
+```javascript
+pragma solidity ^0.8.4;
 
-// mint function
-function mint(address _address, uint _value) public {
-    Ttotal += _value;
-    Adresstobalance[_address] += _value;
-}
-
-// burn function
-function burn(address _address, uint _value) public {
-    if (Adresstobalance[_address] >= _value) {
-        Ttotal -= _value;
-        Adresstobalance[_address] -= _value;
+contract HelloWorld {
+    function sayHello() public pure returns (string memory) {
+        return "Hello World!";
     }
 }
-}
 
-Compiling the Contract:
-Use the Remix compiler panel to compile your token contract.
-Select the appropriate compiler version i.e 0.8.18.
-Deploying the Contract:
-Switch to the "Deploy & run transactions" tab in Remix.
-Deploy the compiled contract by clicking the "Deploy" button.
-Interacting with the Token:
-Utilize the Remix IDE to interact with the deployed token contract.
-Use the Addresstobalance, mint and burn functions in the "Deployed Contracts" section to perform actions like transferring tokens, checking balances, and burning tokens.
-Input the adress and value and click on the corresponding function buttons to execute our contract.
-**Authors**
+```
 
-Kiratpal Singh Kalsey
+To compile the code, click on the "Solidity Compiler" tab in the left-hand sidebar. Make sure the "Compiler" option is set to "0.8.4" (or another compatible version), and then click on the "Compile HelloWorld.sol" button.
 
-https://www.linkedin.com/in/kiratpal-singh-kalsey-a92b15230/
-@https://www.linkedin.com/in/abhisek-bag-09865421b/
+Once the code is compiled, you can deploy the contract by clicking on the "Deploy & Run Transactions" tab in the left-hand sidebar. Select the "HelloWorld" contract from the dropdown menu, and then click on the "Deploy" button.
 
-License
-This project is licensed under the MIT License - see the LICENSE.md file for details.This code is licensed under the MIT License. You can find the license text in the SPDX-License-Identifier comment at the beginning of the contract.
+Once the contract is deployed, you can interact with it by calling the sayHello function. Click on the "HelloWorld" contract in the left-hand sidebar, and then click on the "sayHello" function. Finally, click on the "transact" button to execute the function and retrieve the "Hello World!" message.
 
-Note: Ensure that you are using a compatible Solidity compiler version (0.8.18) or newer to compile and interact with this contract.
+## Authors
+
+Metacrafter Chris  
+[@metacraftersio](https://twitter.com/metacraftersio)
+
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE.md file for details
